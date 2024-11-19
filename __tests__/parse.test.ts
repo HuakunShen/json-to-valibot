@@ -5,10 +5,9 @@ import { sampleData } from "./data";
 
 test("Converter Test", async () => {
 	const result = jsonToValibotSchema(sampleData);
-	const testCode = `
-    ${result.code}
-    const sampleJson = ${JSON.stringify(sampleData)};
-    console.log(JSON.stringify(v.parse(schema, sampleJson)));
+	const testCode = `${result.code}
+const sampleJson = ${JSON.stringify(sampleData)};
+console.log(JSON.stringify(v.parse(schema, sampleJson)));
     `;
 	Bun.write("test.ts", testCode);
 

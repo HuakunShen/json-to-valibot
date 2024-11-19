@@ -162,7 +162,7 @@ export function jsonToValibotSchema(json: JsonValue): {
 
 			return {
 				schema: object(schema),
-				code: `import * as v from "valibot";\nconst schema = v.object({\n${code.join(",\n")}\n})`
+				code: `import * as v from "valibot";\n\nexport const schema = v.object({\n${code.join(",\n")}\n})`
 			};
 		default:
 			throw new Error(`Unsupported type: ${typeof json}`);
