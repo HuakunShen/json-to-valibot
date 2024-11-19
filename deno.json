@@ -1,0 +1,11 @@
+{
+	"name": "@hk/json-to-valibot",
+	"version": "0.1.0",
+	"license": "MIT",
+	"exports": "./mod.ts",
+	"lint": {
+		"rules": {
+			"exclude": ["no-explicit-any"]
+		}
+	}
+}
