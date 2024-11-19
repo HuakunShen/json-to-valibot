@@ -4,10 +4,19 @@
 	"type": "module",
 	"scripts": {
 		"format": "bunx prettier --write .",
-		"test": "bun test --coverage"
+		"test": "bun test --coverage",
+		"build": "tsup"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/mod.d.ts",
+			"import": "./dist/mod.js",
+			"require": "./dist/mod.cjs"
+		}
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
+		"tsup": "^8.3.5",
 		"valibot": "^1.0.0-beta.7"
 	},
 	"peerDependencies": {
