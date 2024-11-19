@@ -7,7 +7,8 @@
 		"test": "bun test --coverage"
 	},
 	"devDependencies": {
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"valibot": "^1.0.0-beta.7"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0",
