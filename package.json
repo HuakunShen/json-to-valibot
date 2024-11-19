@@ -1,6 +1,18 @@
 {
 	"name": "json-to-valibot",
 	"module": "index.ts",
+	"version": "0.1.3",
+	"license": "MIT",
+	"description": "Convert JSON to Valibot schema",
+	"keywords": [
+		"json",
+		"valibot",
+		"schema"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HuakunShen/json-to-valibot.git"
+	},
 	"type": "module",
 	"scripts": {
 		"format": "bunx prettier --write .",
@@ -22,5 +34,8 @@
 	"peerDependencies": {
 		"typescript": "^5.0.0",
 		"valibot": "^1.0.0-beta.7"
-	}
+	},
+	"files": [
+		"dist"
+	]
 }
